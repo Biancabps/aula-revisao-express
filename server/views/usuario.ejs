@@ -1,0 +1,12 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<% if(usuario) { %>
+    <h2><%= usuario.id %> <%= usuario.nome %></h2>
+<% } else { %>
+    <h2>Usuário não encontrado!</h2>
+<% } %>
+<%- include('partials/footer') %>
